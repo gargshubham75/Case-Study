@@ -1,15 +1,0 @@
-server:
-  port: 8006
-  
-spring:  application:    name: apigateway
-  
-zuul:  routes:    Admin-Module:
-      url: http://localhost:8081
-    User-Module:
-      url: http://localhost:0002
-    room-service:
-      url: http://localhost:0003
-    staff-service:
-      url: http://localhost:0004
-    reservation-service:
-      url: http://localhost:0005
